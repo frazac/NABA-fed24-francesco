@@ -1,4 +1,22 @@
 .definizione {
     position: absolute;
-    left: 250px;
+    left: 236px;
+}
+body {
+    background-color: burlywood;
+}
+.padre,
+.madre {
+    border: 1px solid black;
+}
+.famiglia div {
+    padding: 10px;
+    background-color: white;
+}
+.figlio,
+.figlia {
+    border: 1px solid black;
+}
+div {
+    margin-bottom: 20px;
 }
