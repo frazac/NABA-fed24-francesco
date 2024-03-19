@@ -1,0 +1,45 @@
+body {
+    background-color: antiquewhite;
+}
+
+.blu {
+    background-color: blue;
+}
+.bianco {
+    background-color: white;
+}
+.rosso {
+    background-color: red;
+}
+
+.bandiera {
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+.bandiera div {
+    float: left;
+    width: 133.33px;
+    height: 300px;
+}
+.bandiera .stella {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    top: 49%;
+    left: 48%;
+    border: 1px solid red;
+    z-index: 2;
+}
+.bandiera .stella2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    top: 52%;
+    left: 52%;
+    border: 1px solid brown;
+    z-index: 1;
+}

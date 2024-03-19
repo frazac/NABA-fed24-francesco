@@ -5,6 +5,10 @@
 body {
     background-color: burlywood;
 }
+body.data03 {
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
 .padre,
 .madre {
     border: 1px solid black;
@@ -19,4 +23,31 @@ body {
 }
 div {
     margin-bottom: 20px;
+}
+
+
+
+div {
+    background-color: aqua;
+}
+.famiglia {
+    border: 3px solid silver;
+    padding: 10px;
+}
+.famiglia .padre,
+.famiglia .madre {
+    background-color: aquamarine;
+}
+.famiglia .padre {
+    background-color: aquamarine;
+}
+.nonno > .figlio {
+    background-color: beige;
+}
+.nonno > .figlio:nth-child(5) {
+    /* per chi vuole approfondire trova ricette qui https://css-tricks.com/useful-nth-child-recipies/ */
+    background-color: violet;
+}
+#famiglia02 {
+    background-color: chartreuse;
 }
