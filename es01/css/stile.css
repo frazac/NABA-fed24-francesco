@@ -43,3 +43,63 @@ body {
     border: 1px solid brown;
     z-index: 1;
 }
+.bandiera.norvegia {
+    /* questo è un nuovo selettore, vedete che ho messo il punto senza spazio tra bandiera e norvegia */
+    /* significa che ha entrambi i nomi nello stesso attributto dello stesso tag */
+    width: 400px;
+    height: 300px;
+    border: 1px solid blueviolet;
+}
+.bandiera.norvegia .rosso {
+    background-color: red;
+}
+.bandiera.norvegia .blu {
+    background-color: blue;
+}
+.bandiera.norvegia .bianco {
+    background-color: white;
+}
+.bandiera.norvegia .r1,
+.bandiera.norvegia .r9 {
+    width: 116.595px;
+}
+.bandiera.norvegia .r2,
+.bandiera.norvegia .r4,
+.bandiera.norvegia .r10,
+.bandiera.norvegia .r12 {
+    width: 12.4066px;
+}
+.bandiera.norvegia .r1,
+.bandiera.norvegia .r2,
+.bandiera.norvegia .r3,
+.bandiera.norvegia .r4,
+.bandiera.norvegia .r5,
+.bandiera.norvegia .r9,
+.bandiera.norvegia .r10,
+.bandiera.norvegia .r11,
+.bandiera.norvegia .r12,
+.bandiera.norvegia .r13 {
+    height: 116.595px;
+}
+.bandiera.norvegia .r3,
+.bandiera.norvegia .r11 {
+    width: 41.997px;
+}
+.bandiera.norvegia .r5,
+.bandiera.norvegia .r13 {
+    width: 216.5946px;
+}
+.bandiera.norvegia .r6,
+.bandiera.norvegia .r8 {
+    width: 399.9997px;
+    height: 12.4066px;
+}
+.bandiera.norvegia .r7 {
+    width: 399.9997px;
+    height: 41.997px;
+}
+
+
+
+
+
