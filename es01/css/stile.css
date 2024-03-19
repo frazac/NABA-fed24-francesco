@@ -12,11 +12,18 @@ body {
     background-color: red;
 }
 
+.sezione {
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
 .bandiera {
     border: 1px solid black;
     width: 400px;
     height: 300px;
     position: relative;
+    margin-top: 10px;
 }
 .bandiera div {
     float: left;
@@ -49,6 +56,7 @@ body {
     width: 400px;
     height: 300px;
     border: 1px solid blueviolet;
+    font-size: 9px;
 }
 .bandiera.norvegia .rosso {
     background-color: red;
@@ -92,6 +100,10 @@ body {
 .bandiera.norvegia .r6,
 .bandiera.norvegia .r8 {
     width: 399.9997px;
+    height: 12.4066px;
+}
+.bandiera.norvegia .r6 div,
+.bandiera.norvegia .r8 div {
     height: 12.4066px;
 }
 .bandiera.norvegia .r7 {
