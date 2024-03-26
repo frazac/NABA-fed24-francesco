@@ -1,0 +1,9 @@
+.rosso {
+    /* background-color: red; */
+    fill: red;
+}
+
+rect.cls-1 {
+    fill: red !important;
+
+}
