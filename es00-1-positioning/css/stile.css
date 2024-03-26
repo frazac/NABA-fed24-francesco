@@ -1,0 +1,103 @@
+body {
+    background-color: antiquewhite;
+}
+
+.viola {
+    background-color: rgb(128, 23, 185);
+}
+.bianco {
+    background-color: white;
+}
+.nero {
+    background-color: black;
+}
+.cerchio {
+    background-color: rgb(23, 161, 185);
+}
+.arancione {
+    background-color: rgb(223, 183, 22);
+}
+
+
+.bandiera {
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.bandiera.utopica .r1 {
+    width: 400px;
+    height: 150px;
+}
+.bandiera.utopica .r2 {
+    width: 400px;
+    height: 150px;
+}
+.bandiera.utopica .r3 {
+    width: 100px;
+    height: 100px;
+    /* position: absolute;
+    left: 60px;
+    bottom: 33.5%; */
+    /* -moz-transform:     rotate(45deg) skew(10deg, 10deg);
+    -webkit-transform:  rotate(45deg) skew(10deg, 10deg);
+    -ms-transform:      rotate(45deg) skew(10deg, 10deg);
+    -o-transform:       rotate(45deg) skew(10deg, 10deg); */
+    transform:          rotate(45deg) skew(10deg, 10deg);
+    border-radius: 35px;
+    position: absolute;
+    top: 97px;
+    left: 46px;
+
+}
+.bandiera.utopica .r4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* position: absolute;
+    left: 80px;
+    bottom: 40%;  */
+    position: absolute;
+    top: 118px;
+    left: 66px;
+}
+.bandiera.utopica .r5 {
+    width: 60px;
+    height: 60px;
+    /* position: absolute;
+    right: 80px;
+    bottom: 40%; */
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    border-radius: 20px;
+
+}
+
+.bandiera.utopica.b2fixed {
+    border: 3px solid yellow;
+    position: fixed;
+    top: 30px;
+}
+.bandiera.utopica.b2sticky {
+border: 3px solid yellow;
+    position: sticky;
+    top: 130px;
+}
+    
+    
+.aste {
+    border: 1px solid red;
+    display: flex;
+}
+.aste div {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.aggiungi-altezza {
+    height: 1000px;
+    border-left: 1px solid brown;
+}
