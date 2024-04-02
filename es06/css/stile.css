@@ -34,14 +34,13 @@ aside {
 
 .wrapper {
     display: flex;
-    flex-direction: row;
 }
 
 header {
     display: flex;
 }
 header nav {
-    align-items: end;
 }
 header .nome {
+    flex-grow: 2;
 }
