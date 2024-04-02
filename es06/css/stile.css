@@ -1,0 +1,47 @@
+body {
+    background-color: crimson;
+}
+
+nav,
+main,
+aside,
+header,
+footer {
+    border: 1px solid white;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+nav {
+    width: 50px;
+}
+
+section {
+    border-bottom: 1px dotted white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section:last-child {
+    border-bottom: 0;
+}
+
+main {
+    flex-grow: 2;
+}
+aside {
+    width: 200px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+}
+header nav {
+    align-items: end;
+}
+header .nome {
+}
