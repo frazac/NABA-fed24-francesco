@@ -1,3 +1,26 @@
 strong {
     display: block;
 }
+.ehi {
+    display: inline !important;
+}
+
+a,
+a:link {
+    color: red !important;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: brown;
+}
+
+body {
+    max-width: 700px;
+}
+img {
+    width: 100% !important;
+    display: block;
+}
