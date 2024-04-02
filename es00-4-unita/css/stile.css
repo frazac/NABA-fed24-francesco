@@ -1,0 +1,48 @@
+html {
+    font-size: 22px;
+}
+body {
+    font-size: 16px;
+}
+div {
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 8px;
+}
+.px {
+    width: 100px;
+    height: 100px;
+}
+.em {
+    font-size: 2em;
+}
+.carattere-20 {
+    font-size: 20px;
+}
+.rem {
+    font-size: 2rem;
+}
+
+h1 {font-size: 3rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+p,div {font-size: 1rem;}
+
+/* migliore modo: dare a html una dimensione di carattere lettura in px (per esempio 18px), e a tutti gli altri titoli e paragrafi un importo in rem */
+
+.perc {
+    width: 50%;
+}
+.vw {
+    width: 50vw;
+}
+.vh {
+    height: 50vh;
+}
+
+/*
+* px per dimensioni lineari
+* rem per tipografia
+* percentuale o vw vh, quando abbiamo bisogno di misure relative
+*/
