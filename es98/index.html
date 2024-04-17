@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Styling the body with no margins, displaying a full-page background, and hiding overflow. */
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      /* Styling the canvas to be displayed as a block element. */
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      // Obtaining the canvas element and its 2D rendering context.
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Setting the canvas dimensions to match the viewport size.
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      // Initializing an array to store circle information.
+      const circles = [];
+
+      // Defining constants for control.
+      const maxCircles = 100; // Limiting the number of circles on the canvas.
+      const trailLength = 20; // Specifying the length of the trails.
+
+      // Generating a random color for the circles.
+      function getRandomColor() {
+        // const letters = "0123456789ABCDEF";
+        // let color = "#";
+        // for (let i = 0; i < 6; i++) {
+        //   color += letters[Math.floor(Math.random() * 16)];
+        // }
+
+        var laneRect_one =    '#eabc92';
+        var laneRect_two =    '#8695e0';
+        var laneRect_three =  '#ceea2d';
+        var laneRect_four =   '#7892a0';
+        var laneRect_5 =   '#ef81c5';
+
+        var laneArr = [laneRect_one, laneRect_two, laneRect_three, laneRect_four, laneRect_5];
+        var color = laneArr[Math.floor(Math.random() * laneArr.length)]
+
+        console.log(color);
+        
+        return color;
+      }
+
+      // Creating a new circle and adding it to the array, managing the maximum limit.
+      function createCircle(x, y, radius, color) {
+        circles.push({ x, y, radius, color });
+
+        // Removing the oldest circle if the maximum circle count is reached.
+        if (circles.length > maxCircles) {
+          circles.shift();
+        }
+      }
+
+      // Function to draw the canvas and animate the circles.
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clearing the canvas.
+
+        // Looping through the circles array, drawing each with a fading effect.
+        for (let i = 0; i < circles.length; i++) {
+          const circle = circles[i];
+
+          ctx.beginPath();
+          ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
+          ctx.fillStyle = circle.color;
+
+          // Adjusting the transparency based on the circle's position in the array.
+          ctx.globalAlpha = (i / circles.length) * 0.5;
+          ctx.fill();
+
+          circle.radius += 0.5; // Increasing the radius for animation.
+
+          // Removing old circles when they exceed a certain size.
+          if (circle.radius > 50) {
+            circles.splice(i, 1);
+            i--;
+          }
+        }
+
+        requestAnimationFrame(draw); // Continuing the animation loop.
+      }
+
+      // Function for handling mouse movement and creating new circles at the pointer.
+      function onMouseMove(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+        createCircle(x, y, 0, getRandomColor()); // Creating a new circle at the mouse position.
+      }
+
+      canvas.addEventListener("mousemove", onMouseMove); // Listening for mouse movement.
+
+      draw(); // Starting the animation loop.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>la storia dei css ereditati</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: aliceblue;
+            background-color: cadetblue;
+            /* padding: 300px; */
+        }
+        div {
+            border: 1px solid red;
+            width: 100vh;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        div.viewpoint-ft-roberta {
+            border: 3px solid green;
+            width: 50vw;
+            height: 100px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        div.percentuale {
+            border: 3px solid blue;
+            width: 50%;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        img {
+            display: block;
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 3em;
+            font-size: 4em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TITOLO</h1>
+    <h2>SOTTOTITOLO</h2>
+    <div>ciao</div>
+    <div class="viewpoint-ft-roberta">ciao 50vw</div>
+    <div class="percentuale">ciao 50%</div>
+
+    <!-- io faccio una dimostrazione con un file inesistente -->
+    <img src="immagine-che-mi-sono-dimenticato-di-mettere-in-radice.geipigi" alt="ciao" title="HELLO">
+
+    <p>ciao <span>hello</span></p>
+</body>
+
+</html>
