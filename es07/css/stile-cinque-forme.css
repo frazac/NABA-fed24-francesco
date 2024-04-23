@@ -5,8 +5,37 @@ body {
 .cinque-forme {
     display: flex;
     flex-wrap: wrap;
-}
-.cinque-forme img {
-    display: block;
+    align-items: flex-end;
 
+}
+
+.cinque-forme > div {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.cinque-forme > div img {
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    /* qui proprietà per il mobile */
+    .cinque-forme > div {
+        width: 150px;
+        height: 150px;
+
+        border: 1px solid black;
+        border-radius: 15px;
+
+    }
+    .cinque-forme > div img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+    /* qui scriveremo le proprietà per il tablet */
 }
