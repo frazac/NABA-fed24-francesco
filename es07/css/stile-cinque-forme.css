@@ -1,0 +1,12 @@
+body {
+    background-color: aliceblue;
+}
+
+.cinque-forme {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cinque-forme img {
+    display: block;
+
+}
