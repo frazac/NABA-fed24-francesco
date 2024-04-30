@@ -39,3 +39,26 @@ body {
 @media only screen and (min-width: 501px) and (max-width: 850px) {
     /* qui scriveremo le proprietà per il tablet */
 }
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+    /* qui scriveremo le proprietà per il mobile */
+    body {
+        background-color: yellow;
+    }
+}
+/* TABLET */
+@media only screen and (min-width: 501px) and (max-width: 750px) {
+    /* qui scriveremo le proprietà per il tablet */
+    body {
+        background-color: crimson;
+        
+    }
+}
+/* DESKTOP */
+@media only screen and (min-width: 751px) {
+    /* qui scriveremo le proprietà per il desktop */
+    body {
+        background-color: silver;
+    }
+}
