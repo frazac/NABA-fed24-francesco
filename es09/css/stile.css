@@ -1,0 +1,44 @@
+body {
+    background-color: lavender;
+
+}
+div {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 4s, transform 1s;
+    transition: all 1s;
+    transition-delay: 500ms;
+    animation-name: example1;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+
+}
+div:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(12deg) translate(50px,50px);
+}
+@keyframes example0 {
+    from {background-color: limegreen;}
+    to {background-color: purple;}
+}
+@keyframes example1 {
+    0%   {
+        transform: translate(0px,0px);
+        background-color:red;}
+    25%  {
+        transform: translate(200px,0px);
+        background-color:yellow;}
+    50%  {
+        transform: translate(200px,200px);
+        background-color:blue;}
+    75%  {
+        transform: translate(0px,200px);
+        background-color:green;}
+    100% {
+        transform: translate(0px,0px);
+        background-color:red;}
+  }
+  
+  
