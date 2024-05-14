@@ -1,6 +1,8 @@
 body {
     background-color: ivory;
 }
+
+/* parte dedicata a table, soltanto a titolo di esempio, che non vi chiedo di implementare */
 table {
     border: 1px solid red;
     border-spacing: 10px;
@@ -12,6 +14,7 @@ table td {
     padding: 5px;
 }
 
+/* parte dedicata alla seconda tabella che utilizza flex */
 .tabella-alternativa-flex {
     margin-top: 20px;
     border: 2px solid blue;
@@ -35,6 +38,7 @@ table td {
     height: 100px;
 }
 
+/* parte dedicata alla terza tabella che utilizza grid */
 .tabella-alternativa-grid {
     width: 920px;
     margin-top: 20px;
