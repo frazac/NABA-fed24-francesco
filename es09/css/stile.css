@@ -9,11 +9,12 @@ div {
     transition: width 2s, height 4s, transform 1s;
     transition: all 1s;
     transition-delay: 500ms;
-    animation-name: example1;
     animation-duration: 10s;
     animation-iteration-count:infinite;
 
 }
+div.transition  {animation-name: example0;}
+div.animation   {animation-name: example1;}
 div:hover {
     width: 200px;
     height: 200px;

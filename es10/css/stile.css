@@ -1,0 +1,57 @@
+body {
+    background-color: ivory;
+}
+table {
+    border: 1px solid red;
+    border-spacing: 10px;
+}
+table tr {
+}
+table td {
+    border: 1px solid orange;
+    padding: 5px;
+}
+
+.tabella-alternativa-flex {
+    margin-top: 20px;
+    border: 2px solid blue;
+}
+.tabella-alternativa-flex .riga {
+    border-bottom: 1px solid aqua;
+    display: flex;
+}
+.tabella-alternativa-flex .riga:last-child {
+    border: none;
+}
+.tabella-alternativa-flex .riga .cella {
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 1px solid aqua;
+}
+.tabella-alternativa-flex .riga2 {
+    height: 100px;
+}
+
+.tabella-alternativa-grid {
+    width: 920px;
+    margin-top: 20px;
+    border: 2px solid blue;
+    display: grid;
+    grid: 50px 50px 50px 50px 50px / 300px 600px;
+    /* potete provare a usare anche la linea sotto per capire come funziona grid */
+    /* grid: 50px 150px 50px / 100px 200px 100px 200px; */
+    gap: 20px;
+
+
+}
+.tabella-alternativa-grid .cella {
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid aqua;
+    box-sizing: border-box;
+}
