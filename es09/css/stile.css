@@ -11,7 +11,7 @@ div {
     transition-delay: 500ms;
     animation-duration: 10s;
     animation-iteration-count:infinite;
-    mix-blend-mode: hard-light;
+    mix-blend-mode: difference;
 }
 div.transition  {animation-name: example0;}
 div.animation   {animation-name: example1;}
@@ -33,7 +33,7 @@ div:hover {
         background-color:yellow;}
     50%  {
         transform: translate(200px,200px);
-        background-color:blue;}
+        background-color:aqua;}
     75%  {
         transform: translate(0px,200px);
         background-color:green;}
