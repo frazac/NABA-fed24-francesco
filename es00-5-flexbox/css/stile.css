@@ -1,0 +1,38 @@
+body {
+    background-color: ivory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+.padre {
+    width: 25vw;
+    height: 25vw;
+    background-color: white;
+    border: 8px ridge lightgreen;
+    border-style: ridge;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* justify-content lavora sul main axis (e in questo caso visto che è direction: rew signifca da SX a DX) */
+    align-items: center; /* align-items lavora sul cross axix (e in questo caso è da ALTO a BASSO) */
+    flex-wrap: wrap;
+}
+.padre div {
+    width: 40% !important;
+    height: 130px;
+    border: 1px solid silver;
+    margin: 5px;
+    font-size: 98px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padre div:nth-child(1) {
+    color: darkcyan;
+}
+.padre div:nth-child(n+2) {
+    color: lightgreen;
+    flex-grow: 2;
+
+}
