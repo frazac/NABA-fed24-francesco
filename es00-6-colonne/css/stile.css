@@ -1,0 +1,15 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+.contenitore {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    border-top: 1px solid red;
+    margin-right: 30px;
+    width: calc( ( 100% - 60px ) / 3 );
+}
+.col:nth-child(3) {
+    margin-right: 0;
+}
