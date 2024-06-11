@@ -1,0 +1,130 @@
+body {
+  background-color: ivory;
+  font-family: 'Neue Machina', sans-serif;
+}
+
+.folder1, .folder2, .folder3, .folder4, .folder5, .folder6 {
+  width: 90%; /* Imposta la larghezza dei folder al 90% della larghezza della pagina */
+  max-width: 1503px; /* Larghezza massima per i folder */
+}
+
+.folder {
+  position: relative;
+}
+
+.folder a, .folder div {
+  display: block;
+  width: 1920px;
+  height: 1080px;
+  margin-top: 50px;
+  border-radius: 0px 25px 25px 25px;
+  position: absolute;
+}
+
+.folder1 {
+  background: #DFCDBF;
+  top: 50px;
+  z-index: 1;
+}
+
+.folder1::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 0px;
+  background: #DFCDBF;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder2 {
+  background: #CDBC6A;
+  top: 50px;
+  z-index: 2;
+}
+
+.folder2::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 225px;
+  background: #CDBC6A;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder3 {
+  background: #EB6447;
+  top: 50px;
+  z-index: 3;
+}
+
+.folder3::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 450px;
+  background: #EB6447;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder4 {
+  background: #9EB4A7;
+  top: 50px;
+  z-index: 4;
+}
+
+.folder4::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 675px;
+  background: #9EB4A7;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder5 {
+  background: #F5BBD3;
+  top: 50px;
+  z-index: 7;
+}
+
+.folder5::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 900px;
+  background: #F5BBD3;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder6 {
+  background: #2B2B2B;
+  top: 50px;
+  z-index: 6;
+}
+
+.folder6::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 1125px;
+  background: #2B2B2B;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
